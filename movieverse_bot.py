@@ -153,9 +153,9 @@ async def start_handler(client: Client, message: Message):
                     ])
                     
                     await message.reply(
-                        "🎬 **MOVIEVERSE HUB** 🎬\n"
+                        "🎬 **LumiFlix** 🎬\n"
                         "━━━━━━━━━━━━━━━━━━━\n\n"
-                        "🎭 **Welcome to MovieVerse!**\n"
+                        "🎭 **Welcome to LumiFlix!**\n"
                         "Your ultimate destination for movies! 🍿\n\n"
                         "🔐 **Quick Access Required!**\n"
                         "Join our exclusive channel to unlock:\n"
@@ -192,7 +192,7 @@ async def start_handler(client: Client, message: Message):
                     "✅ Your movie has been sent successfully!\n"
                     "🍿 Enjoy watching!\n\n"
                     "━━━━━━━━━━━━━━━━\n"
-                    "💫 **MovieVerse Hub** - Your entertainment destination!"
+                    "💫 **LumiFlix** - Your entertainment destination!"
                 )
             except Exception as e:
                 logger.error(f"❌ Error forwarding movie: {e}")
