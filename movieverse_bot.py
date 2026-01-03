@@ -216,12 +216,12 @@ async def start_handler(client: Client, message: Message):
     else:
         # No movie code - show welcome message
         await message.reply(
-            "🎬 **Welcome to MovieVerse Bot!** 🍿\n\n"
+            "🎬 **Welcome to LumiFlix!** 🍿\n\n"
             "━━━━━━━━━━━━━━━━━━━\n\n"
             "🎭 **Your Entertainment Gateway!**\n\n"
-            "This bot delivers movies directly from the MovieVerse app.\n\n"
+            "This bot delivers movies directly from the LumiFlix app.\n\n"
             "📱 **How to use:**\n"
-            "1️⃣ Download the **MovieVerse app**\n"
+            "1️⃣ Download the **LumiFlix app**\n"
             "2️⃣ Browse movies\n"
             "3️⃣ Tap 'Download' button\n"
             "4️⃣ Movie arrives here automatically!\n\n"
@@ -233,7 +233,7 @@ async def start_handler(client: Client, message: Message):
             "📚 Huge library\n\n"
             "━━━━━━━━━━━━━━━━━━━\n\n"
             "💫 **Get started now!**\n"
-            "Download the MovieVerse app to begin! 🚀"
+            "Download the LumiFlix app to begin! 🚀"
         )
 
 @app.on_callback_query(filters.regex(r"^check_"))
@@ -269,7 +269,7 @@ async def check_callback_handler(client: Client, callback_query: CallbackQuery):
                     "✅ Thank you for joining!\n"
                     "🍿 Enjoy your movie!\n\n"
                     "━━━━━━━━━━━━━━━━\n"
-                    "💫 **MovieVerse Hub** - Your entertainment destination!"
+                    "💫 **LumiFlix Hub** - Your entertainment destination!"
                 )
                 
                 # Delete the join message
@@ -293,7 +293,7 @@ async def check_callback_handler(client: Client, callback_query: CallbackQuery):
 
 # Run the bot
 if __name__ == "__main__":
-    logger.info("🚀 Starting MovieVerse Bot...")
+    logger.info("🚀 Starting LumiFlix Bot...")
     logger.info(f"📡 Force Subscribe: {'ENABLED' if ENABLE_FORCE_SUBSCRIBE else 'DISABLED'}")
     logger.info(f"📢 Channel: {FORCE_SUBSCRIBE_CHANNEL}")
     logger.info(f"🔥 Firebase URL: {FIREBASE_URL}")
